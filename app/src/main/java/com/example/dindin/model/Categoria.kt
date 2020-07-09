@@ -8,12 +8,8 @@ class Categoria {
         this.categoria = categoria
 
     }
-
     constructor()
 
-    override fun toString(): String {
-        return this.categoria
-    }
 
 
 }

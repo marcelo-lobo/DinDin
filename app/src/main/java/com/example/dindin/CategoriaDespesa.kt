@@ -2,7 +2,6 @@ package com.example.dindin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Adapter
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import com.example.dindin.model.Categoria
@@ -22,17 +21,19 @@ class CategoriaDespesa : AppCompatActivity() {
 
         var listview = findViewById<ListView>(R.id.listView_categoria_despesa)
 
-
         //carregar da API as categorias de despesas - jogar os valores em um Array para depois adaptar em uma listview
-        var lista = ArrayList<Categoria>()
+        var arraylista = ArrayList<Categoria>()
         //val url  =" http://aplicativodindin.000webhostapp.com/webservice/getAllCategoriaDespesa.php"
-        lista.add(Categoria("Lanches"))
-        lista.add(Categoria("Transporte"))
-        lista.add(Categoria("Academia"))
 
 
 
-       val lista_adaptada = ArrayAdapter(this, R.layout.modelo_listview_categoria_receita_despesa, lista)
+        arraylista.add(Categoria("Lanches"))
+        arraylista.add(Categoria("Educação"))
+        arraylista.add(Categoria("Transporte"))
+
+
+
+        val lista_adaptada = AdaptarCategoria(this, R.layout.modelo_listview_categoria_receita_despesa, arraylista)
         listview.adapter = lista_adaptada
 
 
