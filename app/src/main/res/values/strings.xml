@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DinDin</string>
+
+    <string name="data_despesa">Data da Despesa</string>
+    <string name="valor_despesa">Valor da Despesa</string>
+    <string name="descricao_despesa_despesa">Descrição</string>
+
+
+    <string name="login">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="logar">Entrar</string>
+</resources>

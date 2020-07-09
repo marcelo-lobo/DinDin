@@ -1,0 +1,147 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="tela_totalizador_caixa_externa">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="tela_totalizador_caixa_externa_saldo">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_height">110dp</item>
+    </style>
+
+    <style name="tela_totalizador_texto_caixa_receita_despesa">
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="tela_totalizador_texto_caixa_receita_despesa_valor">
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <style name="card_categoria_receita_despesa">
+        <item name="android:padding">30dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="card_categoria_receita_despesa_texto">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+
+    <style name="layout_spinner">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="icones_login">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="margem_padding">
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <style name="imagem_centralizar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="caixa_categoria_cadastrar">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/texto_nao_editavel</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <style name="caixa_margin_padding">
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <style name="margin_icone">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="cor_fundo_botao_cadastrar_despesa">
+        <item name="android:colorBackground">#EA2929</item>
+    </style>
+
+    <style name="cor_fundo_botao_cadastrar_receita">
+        <item name="android:colorBackground">#292CEA</item>
+    </style>
+
+    <style name="caixa_icone_despesa">
+
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="btn_adicionar">
+
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/texto_nao_editavel</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="margin_icone_adicionar">
+        <item name="android:layout_marginRight">1dp</item>
+    </style>
+
+</resources>

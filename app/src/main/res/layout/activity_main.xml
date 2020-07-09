@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="203dp">
+
+        <ImageView
+            android:id="@+id/logo_academia"
+            style="@style/imagem_centralizar"
+            android:layout_width="wrap_content"
+            android:layout_height="131dp"
+            android:src="@drawable/logo_dindin" />
+
+        <ImageView
+            android:id="@+id/icone_pessoa"
+            style="@style/imagem_centralizar"
+            android:layout_width="105dp"
+            android:layout_height="103dp"
+            android:src="@drawable/ic_person" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icone_login"
+                style="@style/icones_login"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_mail_login" />
+
+
+            <EditText
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/margem_padding"
+                android:hint="@string/login"
+                android:inputType="textEmailAddress"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icone_senha"
+                style="@style/icones_login"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_lock_login" />
+
+
+
+
+            <EditText
+                android:id="@+id/senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/margem_padding"
+                android:hint="@string/password"
+                android:inputType="numberPassword"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/entrar"
+            style="@style/margem_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="logar"
+            android:text="@string/logar" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
