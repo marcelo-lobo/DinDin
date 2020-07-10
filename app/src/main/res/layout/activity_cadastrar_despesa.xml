@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarDespesa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_navigate_before">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/id_campo_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caixa_texto_nao_editavel"
+            style="@style/caixa_categoria_cadastrar"
+            android:text="Alimentação" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icone_calendario"
+                style="@style/margin_icone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_calendario1" />
+
+
+            <EditText
+                android:id="@+id/data_despesa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/caixa_margin_padding"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/data_despesa"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icone_money"
+                style="@style/margin_icone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_money2" />
+
+
+            <EditText
+                android:id="@+id/valor_despesa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/caixa_margin_padding"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/valor_despesa"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/descricao_despesa_despesa"
+            style="@style/caixa_margin_padding"
+            />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/icone_adicionar"
+            style="@style/margin_icone_adicionar_cadastrar"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_adicionar_despesa" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,8 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/listView_categoria_despesa">
+            android:id="@+id/listView_categoria_despesa"
+            android:textAlignment="center">
 
         </ListView>
 

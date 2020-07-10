@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CategoriaDespesa"></activity>
+        <activity android:name=".CadastrarDespesa"></activity>
+        <activity android:name=".CategoriaDespesa" />
         <activity android:name=".Totalizador" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -16,6 +16,13 @@
         android:background="@drawable/layout_1"
         style="@style/card_categoria_receita_despesa">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_pk_categoria"
+            android:text="Categoria da despesa"
+            style="@style/card_categoria_receita_despesa_texto_pk"
+            android:textColor="#7DBD80"/>
 
         <TextView
             android:layout_width="wrap_content"
