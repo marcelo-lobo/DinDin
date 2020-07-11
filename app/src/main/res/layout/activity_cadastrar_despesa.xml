@@ -19,12 +19,20 @@
         </ImageView>
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_pk_categoria"
+            android:textColor="#FFFFFF"
+            />
+
+
+        <TextView
             android:id="@+id/id_campo_categoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/caixa_texto_nao_editavel"
             style="@style/caixa_categoria_cadastrar"
-            android:text="Alimentação" />
+            android:text="" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,6 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/descricao_despesa_despesa"
+            android:id="@+id/descricao"
             style="@style/caixa_margin_padding"
             />
 

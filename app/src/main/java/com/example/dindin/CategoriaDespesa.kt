@@ -46,7 +46,7 @@ class CategoriaDespesa : AppCompatActivity() {
             cadastrar_despesa_intent .putExtra("pk_categoria",arraylista.get(position).pk_categoria)
             cadastrar_despesa_intent .putExtra("categoria",arraylista.get(position).categoria)
 
-            startActivity(cadastrar_despesa_intent );
+            startActivity(cadastrar_despesa_intent);
             overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
         }

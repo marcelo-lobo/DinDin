@@ -14,8 +14,8 @@ class AdaptarCategoria  (val ctx: Context, var resouces:Int, var colunas:List<Ca
         val layoutInflater: LayoutInflater = LayoutInflater.from(ctx)
         val view: View = layoutInflater.inflate(resouces, null)
 
+        val pk_categoriaTexView = view.findViewById<TextView>(R.id.id_pk_categoria)
         val categoriaTextView: TextView = view.findViewById(R.id.id_nome_categoria)
-        val pk_categoriaTexView = view.findViewById<TextView>(R.id.id_nome_categoria)
 
         val campo:Categoria = colunas[ordem]
 

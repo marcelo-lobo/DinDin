@@ -43,6 +43,13 @@ class Totalizador : AppCompatActivity() {
     }
 
 
+    fun sair(view: View) {
 
+        val sair = Intent(this, MainActivity::class.java);
+        startActivity(sair);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+
+    }
 
 }

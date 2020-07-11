@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 */
-
+//preciso guardar o id do usuário para usar na hora de cadastrar uma receita ou despesa!!!!!
          val intent = Intent(this, Totalizador::class.java)
          startActivity(intent);
          overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
