@@ -5,7 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import android.widget.Toast
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.example.dindin.model.Categoria
+import org.json.JSONException
+import org.json.JSONObject
 
 class CategoriaDespesa : AppCompatActivity() {
 
@@ -22,20 +29,44 @@ class CategoriaDespesa : AppCompatActivity() {
 
         var listview = findViewById<ListView>(R.id.listView_categoria_despesa)
 
-        //carregar da API as categorias de despesas - jogar os valores em um Array para depois adaptar em uma listview
+
         var arraylista = ArrayList<Categoria>()
-        //val url  =" http://aplicativodindin.000webhostapp.com/webservice/getAllCategoriaDespesa.php"
+
+            val stringRequest = StringRequest(
+                Request.Method.GET,
+                EndPoints.URL_GET_LISTAR_CATEGORIAS_DESPESAS,
+                Response.Listener<String> { s ->
+                    try {
+                        val obj = JSONObject(s)
+                        if (!obj.getBoolean("error")) {
+                            val array = obj.getJSONArray("categorias")
+
+                            for (i in 0..array.length() - 1) {
+                                val objectCategoria = array.getJSONObject(i)
+                                val despesa = Categoria(
+                                    objectCategoria.getInt("pk_tipo_receita_despesa"),
+                                    objectCategoria.getString("tipo_receita_despesa")
+                                )
+                                arraylista!!.add(despesa)
 
 
-
-        arraylista.add(Categoria(1,"Lanches"))
-        arraylista.add(Categoria(5,"Educação"))
-        arraylista.add(Categoria(4,"Transporte"))
+                                val lista_adaptada = AdaptarCategoria(this, R.layout.modelo_listview_categoria_receita_despesa, arraylista)
+                                listview.adapter = lista_adaptada
 
 
+                            }
+                        } else {
+                            Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_LONG).show()
+                        }
+                    } catch (e: JSONException) {
+                        e.printStackTrace()
+                    }
+                }, Response.ErrorListener { volleyError -> Toast.makeText(applicationContext, volleyError.message, Toast.LENGTH_LONG).show() })
 
-        val lista_adaptada = AdaptarCategoria(this, R.layout.modelo_listview_categoria_receita_despesa, arraylista)
-        listview.adapter = lista_adaptada
+            val requestQueue = Volley.newRequestQueue(this)
+            requestQueue.add<String>(stringRequest)
+
+
 
 
         listview.setOnItemClickListener { parent, view, position, id ->

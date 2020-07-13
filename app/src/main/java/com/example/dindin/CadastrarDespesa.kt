@@ -1,5 +1,6 @@
 package com.example.dindin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -46,11 +47,21 @@ class CadastrarDespesa : AppCompatActivity() {
         //tem q pegar o código do usuário também (vamos passar 5 valores para fazer o cadastro)
         val cod_categoria = findViewById<TextView>(R.id.id_pk_categoria).text.toString()
         val data_despesa = findViewById<EditText>(R.id.data_despesa).text.toString()
-        val valor_despesa = findViewById<EditText>(R.id.valor_despesa).toString()
+        val valor_despesa = findViewById<EditText>(R.id.valor_despesa).text.toString()
         val descricao_despesa = findViewById<EditText>(R.id.descricao).text.toString()
 
 
 
+
+        val ano = data_despesa.substring(6,10)
+        val mes = data_despesa.substring(3,5)
+        val dia = data_despesa.substring(0,2)
+        val data_despesa2 = ano+"-"+mes+"-"+dia
+
+        //Toast.makeText(this, "campo: " + data_despesa2, Toast.LENGTH_LONG).show();
+
+
+        //Toast.makeText(this, "campo: " +  EndPoints.URL_ADD_RECEITA_DESPESA, Toast.LENGTH_LONG).show();
 
         //creating volley string request
         val stringRequest = object : StringRequest(
@@ -72,9 +83,9 @@ class CadastrarDespesa : AppCompatActivity() {
             override fun getParams(): Map<String, String> {
                 val params = HashMap<String, String>()
 
-                params.put("valor_receita_despesa", valor_despesa)
-                params.put("valor_receita_despesa", valor_despesa)
-                params.put("valor_receita_despesa", valor_despesa)
+                params.put("fk_usuario", "1")
+                params.put("fk_tipo_receita_despesa", cod_categoria)
+                params.put("data_receita_despesa", data_despesa2)
                 params.put("valor_receita_despesa", valor_despesa)
                 params.put("descricao_receita_despesa", descricao_despesa)
                 return params
@@ -84,18 +95,21 @@ class CadastrarDespesa : AppCompatActivity() {
         //adding request to queue
         VolleySingleton.instance?.addToRequestQueue(stringRequest)
 
-
+        val intent = Intent(this, Totalizador::class.java)
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
     }
 
+    fun voltar(view: View) {
+
+        val intent = Intent(this, CategoriaDespesa::class.java)
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+    }
 
 
-
-
-
-        //Toast.makeText(this, "campo: " + pk, Toast.LENGTH_LONG).show();
-
-
+    //Toast.makeText(this, "campo: " + pk, Toast.LENGTH_LONG).show();
 
 
 }

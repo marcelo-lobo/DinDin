@@ -149,6 +149,11 @@
                 android:text="R$ 1.444,11" />
         </LinearLayout>
 
+        <Spinner
+            android:id="@+id/mes_ano"
+            style="@style/layout_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
         <LinearLayout
             style="@style/tela_totalizador_caixa_externa_spinner"
@@ -156,14 +161,20 @@
             android:background="@drawable/layout_2"
             android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/mes_ano"
+            <TextView
                 style="@style/layout_spinner"
+                android:id="@+id/id_texto_mes_ano"
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="wrap_content"
+                android:text="Mês/Ano" />
+
 
 
         </LinearLayout>
+
+
+
+
     </LinearLayout>
 
 
