@@ -6,6 +6,7 @@ class ReceitaDespesa {
     var data =""
     var valor= ""
     var descricao = ""
+    var categoria = ""
 
 
 
@@ -16,6 +17,17 @@ class ReceitaDespesa {
         this.valor = valor
         this.descricao = descricao
     }
+
+    constructor(categoria: String, data : String, valor : String, descricao : String) {
+        this.categoria = categoria
+        this.data = data
+        this.valor = valor
+        this.descricao = descricao
+    }
+
+
+
+
 
     override fun toString(): String {
         return "Receita/Despesa(Cod. Usuário='${cod_usuario}', Cod. Rec/Des=${cod_receita_despesa}, Data='$data', Valor='$valor', Descricao='$descricao')"

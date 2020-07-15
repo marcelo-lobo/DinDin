@@ -71,6 +71,7 @@
             <TextView
                 style="@style/tela_totalizador_texto_caixa_receita_despesa_valor"
                 android:layout_width="match_parent"
+                android:id="@+id/id_texto_total_receitas"
                 android:layout_height="wrap_content"
                 android:text="R$ 2.500,00" />
 
@@ -116,6 +117,7 @@
                 style="@style/tela_totalizador_texto_caixa_receita_despesa_valor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/id_texto_total_despesas"
                 android:text="R$ 1.455,89"/>
         </LinearLayout>
 
@@ -146,14 +148,11 @@
                 style="@style/tela_totalizador_texto_caixa_receita_despesa_valor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/id_texto_saldo"
                 android:text="R$ 1.444,11" />
         </LinearLayout>
 
-        <Spinner
-            android:id="@+id/mes_ano"
-            style="@style/layout_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
+
 
         <LinearLayout
             style="@style/tela_totalizador_caixa_externa_spinner"
@@ -161,12 +160,11 @@
             android:background="@drawable/layout_2"
             android:orientation="vertical">
 
-            <TextView
+            <Spinner
+                android:id="@+id/mes_ano"
                 style="@style/layout_spinner"
-                android:id="@+id/id_texto_mes_ano"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mês/Ano" />
+                android:layout_height="50dp" />
 
 
 

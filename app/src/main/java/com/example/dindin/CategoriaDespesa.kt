@@ -3,6 +3,7 @@ package com.example.dindin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
@@ -89,7 +90,12 @@ class CategoriaDespesa : AppCompatActivity() {
 
 
 
+    fun voltar(view: View) {
+        val intent = Intent(this, Totalizador::class.java)
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
+    }
 
 
 
