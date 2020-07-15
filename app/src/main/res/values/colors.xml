@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="texto_nao_editavel">#838282</color>
+
+    <color name="my_spinner_text_color">#808080</color>
 </resources>

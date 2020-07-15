@@ -41,7 +41,7 @@
         <LinearLayout
             style="@style/tela_totalizador_caixa_externa"
             android:layout_width="match_parent"
-            android:layout_height="145dp"
+            android:layout_height="130dp"
             android:background="@drawable/layout_2"
             android:onClick="listarReceitas"
             android:orientation="vertical">
@@ -83,7 +83,7 @@
         <LinearLayout
             style="@style/tela_totalizador_caixa_externa"
             android:layout_width="match_parent"
-            android:layout_height="145dp"
+            android:layout_height="130dp"
             android:background="@drawable/layout_2"
             android:orientation="vertical"
             android:onClick="listarDespesas">
@@ -125,7 +125,6 @@
         <LinearLayout
             style="@style/tela_totalizador_caixa_externa_saldo"
             android:layout_width="match_parent"
-
             android:background="@drawable/layout_2"
             android:orientation="vertical">
 

@@ -20,7 +20,7 @@
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">20dp</item>
-        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_height">70dp</item>
     </style>
 
 
@@ -29,13 +29,13 @@
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">20dp</item>
-        <item name="android:layout_height">76dp</item>
+        <item name="android:layout_height">60dp</item>
     </style>
 
     <style name="tela_totalizador_texto_caixa_receita_despesa">
         <item name="fontFamily">sans-serif-black</item>
         <item name="android:paddingTop">1dp</item>
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">25dp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:layout_marginLeft">100dp</item>
         <item name="android:layout_marginRight">50dp</item>
@@ -45,13 +45,14 @@
     <style name="tela_totalizador_texto_caixa_receita_despesa_valor">
         <item name="fontFamily">sans-serif-black</item>
         <item name="android:paddingTop">1dp</item>
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">20dp</item>
         <item name="android:textAlignment">center</item>
     </style>
 
 
     <style name="card_categoria_receita_despesa">
-        <item name="android:padding">30dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:padding">10dp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">20dp</item>
 
@@ -84,6 +85,7 @@
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginRight">40dp</item>
         <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:textSize">50dp</item>
 
 
     </style>
@@ -171,5 +173,8 @@
     <style name="margin_icone_adicionar_cadastrar">
      <item name="android:layout_marginLeft">200dp</item>
     </style>
+
+
+
 
 </resources>

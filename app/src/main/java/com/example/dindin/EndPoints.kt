@@ -13,8 +13,8 @@ object EndPoints {
     val URL_GET_REFERENCIAS = URL_ROOT + "listarreferenciasanomes"
     val URL_GET_SOMA_RECEITAS_DESPESAS = URL_ROOT + "somareceitasdespesas"
     val URL_GET_DESPESAS = URL_ROOT + "despesas"
-
-
+    val URL_GET_LISTAR_CATEGORIAS_RECEITAS =  URL_ROOT + "listarcategoriasreceitas"
+    val URL_GET_RECEITAS = URL_ROOT + "receitas"
 
 
 }

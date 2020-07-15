@@ -56,7 +56,7 @@ class Totalizador : AppCompatActivity() {
 
 
                             val referencias = findViewById<Spinner>(R.id.mes_ano)
-                            val adapter = ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item, arraylista)
+                            val adapter = ArrayAdapter<String>(this,android.R.layout.select_dialog_item, arraylista)
                             referencias.adapter = adapter
 
 
@@ -168,11 +168,11 @@ class Totalizador : AppCompatActivity() {
 
 
     fun categoriaReceita(view: View) {
-/*
-        val receita = Intent(this, CategoriaReceita::class.java);
+
+     val receita = Intent(this, CategoriaReceita::class.java);
         startActivity(receita);
         overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-*/
+
 
     }
     fun categoriaDespesa(view: View) {
@@ -186,7 +186,19 @@ class Totalizador : AppCompatActivity() {
 
 
     fun listarReceitas (view: View) {
+        val receita = Intent(this, ListarReceitas::class.java);
 
+        val mes_ano = findViewById<Spinner>(R.id.mes_ano).selectedItem.toString()
+        val ano = substring(mes_ano,3,7)
+        val mes = substring(mes_ano,0,2)
+
+
+        receita.putExtra("mes",mes)
+        receita.putExtra("ano",ano)
+
+
+        startActivity(receita);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
     }
 

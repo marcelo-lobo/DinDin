@@ -14,31 +14,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Teste">
-
-
-
-
-
-
-
-
-        </activity>
+        <activity android:name=".ListarReceitas"></activity>
+        <activity android:name=".CadastrarReceita" />
+        <activity android:name=".CategoriaReceita" />
         <activity android:name=".ListarDespesas" />
         <activity android:name=".CadastrarDespesa" />
         <activity android:name=".CategoriaDespesa" />
         <activity android:name=".Totalizador" />
         <activity android:name=".MainActivity">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
-
         </activity>
     </application>
 
